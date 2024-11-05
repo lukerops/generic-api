@@ -1,0 +1,14 @@
+apiVersion: gcp.iam/v1alpha2
+kind: User
+metadata:
+  name: user-teste
+spec:
+  name: Usuário Teste
+  email: user-teste@server.com
+  active: true
+  endereco:
+    tipo: "CASA"
+    active: true
+    inner_object:
+      active: true
+      inner_prop: "VALUE"

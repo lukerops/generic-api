@@ -1,0 +1,17 @@
+apiVersion: tf-gapi.lukerops.com/v1alpha2
+kind: CustomResourceDefinition
+metadata:
+  name: user.gcp.iam
+spec:
+  group: gcp.iam
+  kind: User
+  versions:
+    - name: v1alpha2
+      specSchema:
+        type: object
+        properties:
+          email:
+            type: string
+          active:
+            type: bool
+            default: 42
